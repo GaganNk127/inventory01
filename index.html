@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sweet Spot Inventory Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <center><h1>The Grocery Inventory Tracker</h1></center> 
+    
+    <div class="inventory-form">
+        <h2>Add New Ingredient</h2>
+        <label for="ingredient-name">Item Name:</label>
+        <input type="text" id="ingredient-name">
+        <label for="initial-quantity">Initial Quantity:</label>
+        <input type="number" id="initial-quantity">
+        <button onclick="addIngredient()">Add Ingredient</button>
+    </div>
+    
+    <div class="inventory-form">
+        <h2>Update Stock</h2>
+        <label for="update-name">Item Name:</label>
+        <input type="text" id="update-name">
+        <label for="update-quantity">Quantity Change (+/-):</label>
+        <input type="number" id="update-quantity">
+        <button onclick="updateStock()">Update Stock</button>
+    </div>
+    
+    <h2>Current Inventory</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Ingredient</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody id="inventory-table">
+        </tbody>
+    </table>
+    
+    <script src="script.js"></script>
+</body>
+</html>
